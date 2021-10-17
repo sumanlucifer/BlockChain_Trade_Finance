@@ -1,0 +1,206 @@
+<mvc:View controllerName="temp.L_C.controller.View1" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:u="sap.ui.unified" xmlns="sap.m" xmlns:f="sap.f" xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout">
+	<App>
+		<f:DynamicPage id="dynamicPageId" stickySubheaderProvider="iconTabBar" class="sapUiNoContentPadding cls"
+			toggleHeaderOnTitleClick="{/titleClickable}">
+			<!-- DynamicPage Title -->
+			<f:title>
+				<f:DynamicPageTitle class="cls">
+					<f:heading></f:heading>
+					<f:expandedContent>
+						<Label class="titleoflc sapUiLargeMarginBegin sapUiSmallMarginTop" text="Quick overview of Buyer Account"/>
+					</f:expandedContent>
+					<f:content>
+						<Image src='./image/EYLogo4whitetransparent.svg '></Image>
+						<!--<ToolbarSeparator class="cssseprator"></ToolbarSeparator>-->
+						<Title class="sapUiSmallMarginBegin textalignment" text="Trade Finance Buyer"/>
+					</f:content>
+					<f:actions>
+						<core:Icon src="sap-icon://bell" class="size1 sapUiSmallMarginTop sapUiTinyMarginEnd" color="#ffffff"></core:Icon>
+						<f:Avatar src="" displaySize="Custom" customDisplaySize="1.8rem" displayShape="Circle" class="sapUiLargeMarginEnd sapUiSmallMarginTop"/>
+					</f:actions>
+				</f:DynamicPageTitle>
+			</f:title>
+			<!-- DynamicPage Header -->
+			<f:header>
+				<f:DynamicPageHeader class="dynamiccss" pinnable="true">
+					<HBox justifyContent='Center'>
+						<HBox class='sapMTile'>
+							<VBox>
+								<Label class="sapUiSmallMarginBegin listValue" text="{buyerlccreateModel>/pendingList}"/>
+								<Label class="lcnosapMLabel sapUiSmallMarginBegin sapUiSmallMarginTop" text="Pending L/Cs"/>
+							</VBox>
+							<VBox>
+								<Image src='./image/clock.svg' class="sapUiLargeMarginBegin sapUiSmallMarginTop"></Image>
+							</VBox>
+						</HBox>
+						<HBox class='sapMTile'>
+							<VBox>
+								<Label class="sapUiSmallMarginBegin listValue" text="{buyerlccreateModel>/submitList}"/>
+								<Label class="lcno2sapMLabel sapUiSmallMarginBegin sapUiSmallMarginTop" text="Submitted L/Cs"/>
+							</VBox>
+							<VBox>
+								<Image src='./image/arrow.svg' class="sapUiLargeMarginBegin sapUiSmallMarginTop"></Image>
+							</VBox>
+						</HBox>
+						<HBox class='sapMTile'>
+							<VBox>
+								<Label class="sapUiSmallMarginBegin listValue" text="{buyerlccreateModel>/completeList}"/>
+								<Label class="lcno3sapMLabel sapUiSmallMarginBegin sapUiSmallMarginTop" text="Completed L/Cs"/>
+							</VBox>
+							<VBox>
+								<Image src='./image/image.svg' class="sapUiLargeMarginBegin sapUiSmallMarginTop"></Image>
+							</VBox>
+						</HBox>
+						<HBox class='sapMTile'>
+							<VBox>
+								<Label class="sapUiSmallMarginBegin listValue" text="{buyerlccreateModel>/accountBalanceList}"/>
+								<Label class="lcno4sapMLabel sapUiSmallMarginBegin sapUiSmallMarginTop" text="Account Balance"/>
+							</VBox>
+							<VBox>
+								<Image src='./image/coin.svg' class="sapUiLargeMarginBegin sapUiSmallMarginTop"></Image>
+							</VBox>
+						</HBox>
+					</HBox>
+				</f:DynamicPageHeader>
+			</f:header>
+			<f:content>
+				<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding sapUiMediumMarginTop">
+					<items>
+						<IconTabFilter class="textpendinglc" text="Pending L/C">
+							<Table id="PendingTable" inset="false" items="{buyerlccreateModel>/pendinglcs/data}">
+								<headerToolbar>
+									<Toolbar>
+										<Label text="List of L/C Pending"></Label>
+										<ToolbarSpacer/>
+										<SearchField class="searchicon" liveChange="searchBuyer" width="25%"/>
+										<Button tooltip="Create new L/C" text="New L/C Request" class="bg" press="newLCCreateRequest"/>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column>
+										<Text text="L/C Token"/>
+									</Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
+										<Text text="Supplier Name"/>
+									</Column>
+									<Column minScreenWidth="Desktop" demandPopin="true">
+										<Text text="Product Name"/>
+									</Column>
+									<Column minScreenWidth="Desktop" demandPopin="true">
+										<Text text="L/C Value"/>
+									</Column>
+									<Column>
+										<Text text="Status" class="sapUiSmallMarginBegin"/>
+									</Column>
+									<Column hAlign="End">
+										<Text text="Action" class="sapUiSmallMarginEnd"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{buyerlccreateModel>LCTokenNumber}" class="cellssize"/>
+											<Text text="{buyerlccreateModel>SellerMetadata/SEL_NAME}" class="cellssize"/>
+											<Text text="{buyerlccreateModel>ProductMetadata/PROD_TYPE}" class="cellssize"/>
+											<Text text="${path:'buyerlccreateModel>ProductMetadata/TOTAL_VAL'}"/>
+											<!--<Button text="{buyerlccreateModel>LCStatus}" type="Default" enabled="false"/>-->
+											<ObjectStatus class="sapUiSmallMarginBegin" text="{ path: 'buyerlccreateModel>LCStatus', formatter: '.formatter.statusText' }"
+												state="{ path: 'buyerlccreateModel>LCStatus', formatter: '.formatter.statusColor' }"/>
+											<OverflowToolbar class="sapUiTinyMarginEnd textOverflowToolbar">
+												<ToolbarSpacer/>
+												<Button class="searchicon" text="View Details" type="Transparent" press="viewPendingDetails">
+													<layoutData>
+														<OverflowToolbarLayoutData priority="AlwaysOverflow"/>
+													</layoutData>
+												</Button>
+												<Button class="searchicon" text="Submit" press="onSubmitDialogPress">
+													<layoutData>
+														<OverflowToolbarLayoutData priority="AlwaysOverflow"/>
+													</layoutData>
+												</Button>
+												<Button class="searchicon" text="Delete" type="Transparent" press="uploadbill">
+													<layoutData>
+														<OverflowToolbarLayoutData priority="AlwaysOverflow"/>
+													</layoutData>
+												</Button>
+											</OverflowToolbar>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</IconTabFilter>
+						<IconTabFilter class="textsubmitted" text="Submitted L/C">
+							<Table id="submittedTable" inset="false" items="{buyerlccreateModel>/submittinglcs/data}">
+								<headerToolbar>
+									<Toolbar>
+										<Label text="List of Submitted L/C'S"></Label>
+										<ToolbarSpacer/>
+										<SearchField class="searchicon" liveChange="searchBuyerSubmit" width="25%"/>
+										<Button tooltip="Create new L/C" text="New L/C Request" class="bg" press="newLCcreaterequest"/>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column>
+										<Text text="L/C Token"/>
+									</Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
+										<Text text="Supplier Name"/>
+									</Column>
+									<Column minScreenWidth="Desktop" demandPopin="true">
+										<Text text="Product Name"/>
+									</Column>
+									<Column minScreenWidth="Desktop" demandPopin="true">
+										<Text text="L/C Value"/>
+									</Column>
+									<Column>
+										<Text text="Status" class="sapUiSmallMarginBegin"/>
+									</Column>
+									<Column hAlign="End">
+										<Text text="Action" class="sapUiSmallMarginEnd"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{buyerlccreateModel>LCTokenNumber}" class="cellssize"/>
+											<Text text="{buyerlccreateModel>SellerMetadata/SEL_NAME}" class="cellssize"/>
+											<Text text="{buyerlccreateModel>ProductMetadata/PROD_TYPE}" class="cellssize"/>
+											<Text text="${path:'buyerlccreateModel>ProductMetadata/TOTAL_VAL'}"/>
+											<!--<Button text="{ path: 'buyerlccreateModel>LCStatus', formatter: '.formatter.statusText' }" type="Default" enabled="false"/>-->
+											<ObjectStatus text="{ path: 'buyerlccreateModel>LCStatus', formatter: '.formatter.statusText' }"
+												state="{ path: 'buyerlccreateModel>LCStatus', formatter: '.formatter.statusColor' }"/>
+											<OverflowToolbar class="textOverflowToolbar">
+												<ToolbarSpacer/>
+												<Button class="searchicon" text="View Details" type="Transparent" press="viewSubmittedDetails">
+													<layoutData>
+														<OverflowToolbarLayoutData priority="AlwaysOverflow"/>
+													</layoutData>
+												</Button>
+												<Button class="searchicon" text="B/L Preview" type="Transparent" press="bLpreviewpress">
+													<layoutData>
+														<OverflowToolbarLayoutData priority="AlwaysOverflow"/>
+													</layoutData>
+												</Button>
+											</OverflowToolbar>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</IconTabFilter>
+					</items>
+				</IconTabBar>
+			</f:content>
+			<!-- DynamicPage Footer -->
+			<f:footer>
+				<OverflowToolbar>
+					<Button icon="sap-icon://message-popup" text="{/messagesLength}" type="Emphasized" press="onMessageButtonPress"
+						visible="{= !!${/messagesLength}}"/>
+					<ToolbarSpacer/>
+					<Button type="Accept" text="Accept"/>
+					<Button type="Reject" text="Reject"/>
+				</OverflowToolbar>
+			</f:footer>
+		</f:DynamicPage>
+	</App>
+</mvc:View>

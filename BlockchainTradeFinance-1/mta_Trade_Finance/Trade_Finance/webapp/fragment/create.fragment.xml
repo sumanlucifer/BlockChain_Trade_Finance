@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:upload="sap.m.upload">
+	<Dialog afterOpen="onAfterPreviewOpen" afterClose="onAfterPreviewclose">
+		<customHeader>
+			<Toolbar>
+				<Title class="sapUiTinyMarginBegin textfontcolor" text="Create L/C"/>
+				<ToolbarSpacer/>
+				<Button class="declinecss" icon="sap-icon://decline" press="onpresscreateClose"/>
+			</Toolbar>
+		</customHeader>
+		<VBox>
+			<Label class="sapUiSmallMarginBegin sapUiSmallMarginTop formtextconfirm" text="Are you about to create the new L/C ?"/>
+		</VBox>
+		<HBox class="borderbottomcss">
+			<VBox>
+				<form:SimpleForm editable="false">
+					<form:content>
+						<Label text="Seller Company"/>
+						<Text text="seller"/>
+					</form:content>
+				</form:SimpleForm>
+			</VBox>
+			<VBox>
+				<form:SimpleForm editable="false">
+					<form:content>
+						<Label text="Product"/>
+						<Text text="product"/>
+					</form:content>
+				</form:SimpleForm>
+			</VBox>
+			<VBox>
+				<form:SimpleForm editable="false">
+					<form:content>
+						<Label text="Total Price"/>
+						<Text text="tprice"/>
+					</form:content>
+				</form:SimpleForm>
+			</VBox>
+		</HBox>
+		<l:HorizontalLayout>
+			<Button class="sapUiSmallMarginBegin subcss" text="Yes" press="submitCommunication"/>
+			<Button class="searchicon sapUiSmallMarginBegin" text="No" press="closenosubmitpopup"/>
+		</l:HorizontalLayout>
+	</Dialog>
+</core:FragmentDefinition>

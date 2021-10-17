@@ -1,0 +1,216 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:u="sap.ui.unified"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f"
+	controllerName="Trade_Finance.Trade_Finance.controller.buyerlcCreate" xmlns:c="sap.suite.ui.commons">
+	<App>
+		<NavContainer id="wizardNavContainer">
+			<pages>
+				<Page id="wizardContentPage" showHeader="true">
+					<customHeader>
+						<Bar class="Cbuyertoolbarcss">
+							<contentLeft>
+								<Image src='./image/EYLogo4whitetransparent.svg ' class="sapUiTinyMarginBottom sapUiMediumMarginBegin"></Image>
+								<Title class="sapUiSmallMarginBegin sapUiSmallMarginTop textalignment" text="Trade Finance Buyer"/>
+							</contentLeft>
+							<contentRight>
+								<core:Icon src="sap-icon://bell" class="size1 sapUiSmallMarginTop sapUiTinyMarginEnd" color="#ffffff"></core:Icon>
+								<f:Avatar press="openLogoutFragment" src="" displaySize="Custom" customDisplaySize="1.8rem" displayShape="Circle"
+									class="sapUiLargeMarginEnd sapUiSmallMarginTop"/>
+								<!--<MenuButton class="sapUiSmallMarginEnd sapUiSmallMarginTop" -->
+								<!--icon="sap-icon://message-information" useDefaultActionOnly="true"-->
+								<!--	menuPosition="BeginBottom">-->
+								<!--	<menu>-->
+								<!--		<Menu itemSelected="openLogoutFragment">-->
+								<!--			<MenuItem text="Logout" icon="sap-icon://log"></MenuItem>-->
+								<!--		</Menu>-->
+								<!--	</menu>-->
+								<!--</MenuButton>-->
+							</contentRight>
+						</Bar>
+					</customHeader>
+					<subHeader>
+						<Bar>
+							<contentLeft>
+								<HBox class="sapUiTinyMarginTop">
+									<VBox>
+										<Button class="sapUiMediumMarginBegin" press="buyerLCButtonCreateNav" type="Back"/>
+									</VBox>
+									<VBox>
+										<Label class="overviewcss sapUiSmallMarginTop sapUiSmallMarginBegin" text="Overview/ New L/C Request"/>
+									</VBox>
+								</HBox>
+							</contentLeft>
+						</Bar>
+					</subHeader>
+					<content>
+						<!--<VBox alignItems="Center" justifyContent="Center" width="100%">
+							<VBox alignItems="Center" width="83%" class="hisAlign">-->
+						<c:ProcessFlow id="processflow1" scrollable="true" foldedCorners="false" nodePress="onNodePress" lanes="{processFlow>/items}">
+							<c:lanes>
+								<c:ProcessFlowLaneHeader class="flow circleRem imagecss" iconSrc="{processFlow>image}" text="{processFlow>user} {processFlow>date}"
+									position="{processFlow>position}"/>
+							</c:lanes>
+						</c:ProcessFlow>
+						<!--</VBox>
+						</VBox>-->
+						<!--<Wizard id="CreateProductWizard" showNextButton="false" complete="wizardCompletedHandler">
+							<WizardStep id="ProductTypeStep" title="L/C Creation" validated="true" class="lcdetailscss">-->
+						<VBox>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Buyer Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Name :"/>
+										<Text text=" Eion Morgan"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Company Name :"/>
+										<Text text=" Alpha Ltd US"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="IBAN :"/>
+										<Text text="EY6552611718"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Swift Code :"/>
+										<Text text="SW7372819199"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Bank Name :"/>
+										<Text text="Bank of UK"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Seller Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Name :"/>
+										<Text text="Jeo Root"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Company Name :"/>
+										<Text text="Mnon Ltd US"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="IBAN :"/>
+										<Text text="EY6552611718"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Swift Code :"/>
+										<Text text="SW7372819199"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Bank Name :"/>
+										<Text text="Bank of US"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class=" gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox>
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Product Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Type :"/>
+										<ComboBox id="idProductType" items="{productModel>/productitems}" placeholder="choose">
+											<items >
+												<core:ListItem key="{productModel>key}" text="{productModel>text}"/>
+											</items>
+										</ComboBox>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Price Per Unit (USD)"/>
+										<Input type="Text" liveChange="fnNonNegative" width="200px" id="idPricePerUnit"></Input>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Quantity :"/>
+										<Input type="Text" liveChange="fnNonNegative" width="190px" id="idQuantity"></Input>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Total value (USD) :"/>
+										<Input id="totalid" editable="false" width="190px"></Input>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox>
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="L/C Terms and Conditions"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Maturity date :"/>
+										<DatePicker id="Maturitydate" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change="onLiveChange"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<!--	<VBox class="sapUiTinyMarginBegin">
+										<Label text="Interest rate :"/>
+										<Input type="Text" liveChange="fnNonNegative" id="idIntersetRate"></Input>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>-->
+								</l:content>
+							</l:Grid>
+						</VBox>
+						<HBox class="sapUiLargeMarginBegin">
+							<VBox class="sapUiLargeMarginBegin sapUiTinyMarginTop">
+								<Button class="subcss" text="Create" press="onpresscreatebutton"/>
+							</VBox>
+							<VBox class="sapUiSmallMarginBegin sapUiTinyMarginTop">
+								<Button class="subcss" text="Cancel" press="onPresscancel"/>
+							</VBox>
+						</HBox>
+					</content>
+				</Page>
+			</pages>
+		</NavContainer>
+	</App>
+</mvc:View>

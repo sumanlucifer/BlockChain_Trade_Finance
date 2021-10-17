@@ -1,0 +1,9 @@
+---
+applications:
+- name: BlockchainTradeFinance
+  path: .
+  memory: 1024M
+  services:
+  - connectivityinstance
+  - destinationinstance
+  - Trade_Finance_Xsuaa

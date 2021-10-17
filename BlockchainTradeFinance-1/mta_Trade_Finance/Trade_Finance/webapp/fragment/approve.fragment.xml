@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:upload="sap.m.upload">
+	<Dialog state="Success" afterOpen="onAfterPreviewOpen" afterClose="onAfterPreviewclose">
+		<customHeader>
+			<Toolbar>
+				<Title class="sapUiTinyMarginBegin textfontcolor" text="Approve L/C"/>
+				<ToolbarSpacer/>
+				<Button class="declinecss" icon="sap-icon://decline" press="onpressapproveClose"/>
+			</Toolbar>
+		</customHeader>
+		<form:SimpleForm editable="true">
+			<VBox>
+				<Label class="formtextconfirm" text="Are you about to approve the {buyerlccreateModel>/tokenNum}?"/>
+			</VBox>
+			<Label text="Comments"/>
+			<TextArea value="{/InputValue}" valueLiveUpdate="{/ValueLiveUpdate}" liveChange="handleLiveChange"/>
+		</form:SimpleForm>
+		<l:HorizontalLayout>
+			<Button class="sapUiSmallMarginBegin subcss" text="Confirm" press="approveNewLC"/>
+			<Button class="searchicon sapUiSmallMarginBegin" text="Cancel" press="onpressapproveClose"/>
+		</l:HorizontalLayout>
+	</Dialog>
+</core:FragmentDefinition>

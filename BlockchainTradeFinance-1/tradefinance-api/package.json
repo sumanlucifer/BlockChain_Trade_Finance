@@ -1,0 +1,41 @@
+{
+  "name": "tradefinance-api",
+  "version": "1.0.0",
+  "description": "Trade Finance POC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaurav Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "@openzeppelin/contracts": "^3.2.0",
+    "@sap/xsenv": "^3.0.0",
+    "axios": "^0.20.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "fs": "0.0.1-security",
+    "ipfs-api": "^26.1.2",
+    "joi": "^17.2.1",
+    "jsonfile": "^6.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "request-promise": "^4.2.6",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "uuid": "^8.3.0",
+    "web3": "^1.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

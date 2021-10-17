@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:upload="sap.m.upload">
+	<Dialog afterOpen="onAfterPreviewOpen" afterClose="onAfterPreviewclose">
+		<l:VerticalLayout>
+			<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the local server"
+				uploadComplete="handleUploadComplete"/>
+			<Button text="Upload File" press="handleUploadPress"/>
+		</l:VerticalLayout>
+	</Dialog>
+</core:FragmentDefinition>

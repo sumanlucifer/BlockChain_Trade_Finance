@@ -1,0 +1,1051 @@
+.lcnosapMLabel.sapMLabel {
+    height: 48px !important;
+    width: 93px !important;
+    color: #000000 !important;
+    font-family: EYInterstate !important;
+    font-size: 15px !important;
+    /* font-weight: bold !important; */
+    letter-spacing: 0 !important;
+    line-height: 15px !important;
+}
+
+.lcno2sapMLabel.sapMLabel {
+    height: 48px !important;
+    width: 106px !important;
+    color: #000000 !important;
+    font-family: EYInterstate !important;
+    font-size: 14px !important;
+    /* font-weight: bold !important; */
+    letter-spacing: 0 !important;
+    line-height: 15px !important;
+}
+
+.lcno3sapMLabel.sapMLabel {
+    height: 48px !important;
+    width: 104px !important;
+    color: #000000 !important;
+    font-family: EYInterstate !important;
+    font-size: 14px !important;
+    /* font-weight: bold !important; */
+    letter-spacing: 0 !important;
+    line-height: 15px !important;
+}
+
+.lcno4sapMLabel.sapMLabel {
+    /*height: 48px !important;*/
+    /* width: 75px !important; */
+    color: #000000 !important;
+    font-family: EYInterstate !important;
+    font-size: 15px !important;
+    /*font-weight: bold !important;*/
+    letter-spacing: 0 !important;
+    line-height: 15px !important;
+}
+
+
+/*list value*/
+
+.listValue {
+    color: #000000;
+    font-family: EYInterstate;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+.titleoflc {
+    height: 21px;
+    width: 317px;
+    color: #000000;
+    font-family: EYInterstate;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+.sapMTile {
+    width: 18.2rem !important;
+    height: 7rem !important;
+    display: inherit;
+}
+
+.size1 {
+    font-size: 1.5rem;
+}
+
+.sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected>.sapMITBText {
+    color: #000000 !important;
+}
+
+.cls.sapFDynamicPageTitle .sapFDynamicPageTitleMain {
+    height: 67px;
+    background-color: #1A1A24 !important;
+    box-shadow: 0 4px 10px 0 rgba(37, 37, 49, 0.58);
+}
+
+.cls.sapFDynamicPageTitle {
+    padding: unset !important;
+}
+
+.textalignment {
+    height: 17px !important;
+    /* width: 214px !important; */
+    color: #FFFFFF!important;
+    font-family: EYInterstate;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 13px !important;
+}
+
+.textpendinglc: {}
+
+.textsubmitted: {}
+
+.sapMBtnInner {
+    color: #2E2E38 !important;
+}
+
+.bg >span {
+    background-color: #FFE600 !important;
+    color: #2E2E38;
+    font-family: EYInterstate;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+
+/*buyer bank landing page css*/
+
+.textalignmentbuyerbank {
+    color: #FFFFFF!important;
+    font-family: EYInterstate;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 24px !important;
+}
+
+
+/*.bg {*/
+
+
+/*    background-color: #FAE539 !important;*/
+
+
+/*    color: #2E2E38;*/
+
+
+/*    font-family: EYInterstate;*/
+
+
+/*    font-weight: bold;*/
+
+
+/*    letter-spacing: 0;*/
+
+
+/*    line-height: 16px;*/
+
+
+/*}*/
+
+.sapMBtnIcon {
+    color: #2E2E38 !important;
+}
+
+.formtextconfirm.sapMLabel {
+    color: #2E2E38 !important;
+    font-size: 0.875;
+    font-weight: bold;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sapMListTbl .sapMText,
+.sapMListTbl .sapMLabel {
+    color: #32363a;
+    font-family: EYInterstate;
+    font-size: 14px !important;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+.textfontcolor {}
+
+.sapMDialog>header.sapMDialogTitle .sapMTitle {
+    color: #32363a;
+    margin: 0;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px !important;
+}
+
+
+/*create button hover propertities*/
+
+.bg.sapMBtn:hover>.sapMBtnHoverable {
+    background-color: #FAE539 !important;
+    border-color: #FAE539 !important;
+}
+
+.bg.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: 0!important;
+}
+
+.bg.sapMTB-Transparent-CTX .sapMBtn:not(.sapMBtnDisabled):hover>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
+    border-color: #FAE539
+}
+
+
+/*searchbutton hover propertities*/
+
+.searchicon.sapMBtn:hover>.sapMBtnHoverable {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+
+/*overflowtoolbar hover css*/
+
+.textOverflowToolbar .sapMBtn:hover> .sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed),
+.textOverflowToolbar .sapMIBar-CTX .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed) {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+html.sap-desktop .textOverflowToolbar .sapMToggleBtnPressed,
+.sapMToggleBtnPressed:not(.sapMBtnDisabled),
+html.sap-desktop .textOverflowToolbar .sapMTBar-CTX .sapMToggleBtnPressed,
+.sapMIIBar-CTX .sapMToggleBtnPressed:not(.sapMBtnDisabled),
+html.sap-desktop .textOverflowToolbar .sapMTB-Transparent-CTX .sapMtnInner.sapToggleBtnPressed {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.textOverflowToolbar:not(.sapMBtnDisabled)>span.sapMBtnInner.sapMBtnIconFirst.sapMBtnTransparent.sapMBtnActive,
+.textOverflowToolbar:not(.sapMBtnDisabled)>span.sapMBtnInner.sapMBtnInner.sapMBtnIconLast.sapMBtnTransparent.sapMBtnActive {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.subcss >span {
+    background-color: #FFE600 !important;
+    border: transparent !important;
+    color: #2E2E38 !important;
+    font-family: EYInterstate;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+.searchicon>span {
+    border: transparent !important;
+}
+
+.declinecss>span {
+    border: transparent !important;
+}
+
+.declinecss.sapMBtn:hover>.sapMBtnHoverable {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.flow .suiteUiProcessFlowLaneHeaderIconContainer {
+    /*top: 52% !important;*/
+    top: 62% !important;
+    /*left: 41% !important;*/
+    left: 40% !important;
+}
+
+.imagecss .suiteUiProcessFlowLaneHeaderProcessSymbolIcon,
+.suiteUiProcessFlowLaneHeaderProcessSymbolIcon>.sapUiIcon,
+.suiteUiProcessFlowLaneHeaderProcessSymbolIcon>.sapUiIcon:before {
+    height: 57px !important;
+    width: 95px !important;
+    border-radius: 37px !important;
+}
+
+.circleRem .suiteUiCommonsProcessFlowHeaderIconFill {
+    fill: none;
+    stroke: none;
+}
+
+.text .suiteUiProcessFlowLaneHeaderText {
+    color: black !important;
+}
+
+html[dir="rtl"] .StyleClass {
+    margin-left: 0;
+    margin-right: calc(100% - 23.4375rem);
+}
+
+.hisAlign {
+    min-width: 130% !important;
+}
+
+
+/*.subcss .sapMBtn:hover>.sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive), .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover*/
+
+
+/*{*/
+
+
+/*	background : transparent;*/
+
+
+/*}*/
+
+
+/*.dynamiccss.sapFDynamicPageHeader.sapFDynamicPageHeaderWithContent {*/
+
+
+/*    padding: 0 !important;*/
+
+
+/*    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15), inset 0 -0.0625rem 0 0 #d9d9d9;*/
+
+
+/*}*/
+
+
+/*.Tile1 {*/
+
+
+/*    width: 270px !important;*/
+
+
+/*    height: 116px !important;*/
+
+
+/*}*/
+
+
+/*.Tile2 {*/
+
+
+/*    width: 270px !important;*/
+
+
+/*    height: 116px !important;*/
+
+
+/*}*/
+
+
+/*.Tile3 {*/
+
+
+/*    width: 270px !important;*/
+
+
+/*    height: 116px !important;*/
+
+
+/*}*/
+
+
+/*.Tile4 {*/
+
+
+/*    width: 270px !important;*/
+
+
+/*    height: 116px !important;*/
+
+
+/*}*/
+
+
+/*.Tile1 .sapMGTHdrContent {*/
+
+
+/*    height: 0.3rem !important;*/
+
+
+/*}*/
+
+
+/*.Tile2 .sapMGTHdrContent {*/
+
+
+/*    height: 0.3rem !important;*/
+
+
+/*}*/
+
+
+/*.Tile3 .sapMGTHdrContent {*/
+
+
+/*    height: 0.3rem !important;*/
+
+
+/*}*/
+
+
+/*.Tile4 .sapMGTHdrContent {*/
+
+
+/*    height: 0.3rem !important;*/
+
+
+/*}*/
+
+
+/*.lcnosapMLabel.sapMLabel {*/
+
+
+/*    height: 48px !important;*/
+
+
+/*    width: 75px !important;*/
+
+
+/*    color: #000000 !important;*/
+
+
+/*    font-family: EYInterstate !important;*/
+
+
+/*    font-size: 28px !important;*/
+
+
+/*    font-weight: bold !important;*/
+
+
+/*    letter-spacing: 0 !important;*/
+
+
+/*    line-height: 48px !important;*/
+
+
+/*}*/
+
+
+/*.lcno2sapMLabel.sapMLabel {*/
+
+
+/*    height: 48px !important;*/
+
+
+/*    width: 75px !important;*/
+
+
+/*    color: #000000 !important;*/
+
+
+/*    font-family: EYInterstate !important;*/
+
+
+/*    font-size: 28px !important;*/
+
+
+/*    font-weight: bold !important;*/
+
+
+/*    letter-spacing: 0 !important;*/
+
+
+/*    line-height: 48px !important;*/
+
+
+/*}*/
+
+
+/*.lcno3sapMLabel.sapMLabel {*/
+
+
+/*    height: 48px !important;*/
+
+
+/*    width: 75px !important;*/
+
+
+/*    color: #000000 !important;*/
+
+
+/*    font-family: EYInterstate !important;*/
+
+
+/*    font-size: 28px !important;*/
+
+
+/*    font-weight: bold !important;*/
+
+
+/*    letter-spacing: 0 !important;*/
+
+
+/*    line-height: 40px !important;*/
+
+
+/*}*/
+
+
+/*.lcno4sapMLabel.sapMLabel {*/
+
+
+/*    height: 48px !important;*/
+
+
+/*width: 75px !important;*/
+
+
+/*    color: #000000 !important;*/
+
+
+/*    font-family: EYInterstate !important;*/
+
+
+/*    font-size: 28px !important;*/
+
+
+/*    font-weight: bold !important;*/
+
+
+/*    letter-spacing: 0 !important;*/
+
+
+/*    line-height: 40px !important;*/
+
+
+/*}*/
+
+
+/*.titleoflc {*/
+
+
+/*    height: 21px;*/
+
+
+/*    width: 317px;*/
+
+
+/*    color: #000000;*/
+
+
+/*    font-family: EYInterstate;*/
+
+
+/*    font-size: 18px;*/
+
+
+/*    font-weight: bold;*/
+
+
+/*    letter-spacing: 0;*/
+
+
+/*    line-height: 21px;*/
+
+
+/*}*/
+
+
+/*.sapMTile {*/
+
+
+/*    width: 18.2rem !important;*/
+
+
+/*    height: 7rem !important;*/
+
+
+/*    display: inherit;*/
+
+
+/*}*/
+
+
+/*.size1 {*/
+
+
+/*    font-size: 1.5rem;*/
+
+
+/*}*/
+
+
+/*.sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected>.sapMITBText {*/
+
+
+/*    color: #000000 !important;*/
+
+
+/*}*/
+
+
+/*.cls.sapFDynamicPageTitle .sapFDynamicPageTitleMain {*/
+
+
+/*    height: 67px;*/
+
+
+/*    background-color: #1A1A24 !important;*/
+
+
+/*    box-shadow: 0 4px 10px 0 rgba(37, 37, 49, 0.58);*/
+
+
+/*}*/
+
+
+/*.cls.sapFDynamicPageTitle {*/
+
+
+/*    padding: unset !important;*/
+
+
+/*}*/
+
+
+/*.textalignment {*/
+
+
+/*    height: 21px !important;*/
+
+
+/*    width: 214px !important;*/
+
+
+/*    color: #FFFFFF!important;*/
+
+
+/*    font-family: EYInterstate;*/
+
+
+/*    font-size: 20px;*/
+
+
+/*    letter-spacing: 0;*/
+
+
+/*    line-height: 24px !important;*/
+
+
+/*newly added for border*/
+
+
+/*    border-left: 1px solid white;*/
+
+
+/*    padding-left: 5px;*/
+
+
+/*}*/
+
+
+/*.cssseprator {*/
+
+
+/*    margin-top: 4px !important;*/
+
+
+/*}*/
+
+
+/*.textpendinglc: {}*/
+
+
+/*.textsubmitted: {}*/
+
+
+/*.sapMBtnInner {*/
+
+
+/*    color: #2E2E38 !important;*/
+
+
+/*}*/
+
+
+/*.bg >span {*/
+
+
+/*    background-color: #FFE600 !important;*/
+
+
+/*    color: #2E2E38;*/
+
+
+/*    font-family: EYInterstate;*/
+
+
+/*    font-weight: bold;*/
+
+
+/*    letter-spacing: 0;*/
+
+
+/*}*/
+
+
+/*.sapMBtnIcon {*/
+
+
+/*    color: #2E2E38 !important;*/
+
+
+/*}*/
+
+
+/*.formtextconfirm.sapMLabel {*/
+
+
+/*    color: #2E2E38 !important;*/
+
+
+/*    font-size: 0.875rem;*/
+
+
+/*    font-weight: normal;*/
+
+
+/*    display: inline-block;*/
+
+
+/*    text-overflow: ellipsis;*/
+
+
+/*    overflow: hidden;*/
+
+
+/*    white-space: nowrap;*/
+
+
+/*}*/
+
+
+/*.sapMListTbl .sapMText,*/
+
+
+/*.sapMListTbl .sapMLabel {*/
+
+
+/*    color: #32363a;*/
+
+
+/*    font-family: EYInterstate;*/
+
+
+/*    font-size: 14px !important;*/
+
+
+/*    letter-spacing: 0;*/
+
+
+/*    line-height: 16px;*/
+
+
+/*}*/
+
+
+/*.textfontcolor {}*/
+
+
+/*.sapMDialog>header.sapMDialogTitle .sapMTitle {*/
+
+
+/*    color: #32363a;*/
+
+
+/*    margin: 0;*/
+
+
+/*    vertical-align: middle;*/
+
+
+/*    font-weight: bold;*/
+
+
+/*    font-size: 14px !important;*/
+
+
+/*}*/
+
+
+/*create button hover propertities*/
+
+
+/*.bg.sapMBtn:hover>.sapMBtnHoverable {*/
+
+
+/*    background-color: #FAE539 !important;*/
+
+
+/*    border-color: #FAE539 !important;*/
+
+
+/*}*/
+
+
+/*.bg.html.sap-desktop .sapMBtn:focus>.sapMFocusable {*/
+
+
+/*    outline: 0!important;*/
+
+
+/*}*/
+
+
+/*.bg.sapMTB-Transparent-CTX .sapMBtn:not(.sapMBtnDisabled):hover>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {*/
+
+
+/*    border-color: #FAE539*/
+
+
+/*}*/
+
+
+/*searchbutton hover propertities*/
+
+
+/*.searchicon.sapMBtn:hover>.sapMBtnHoverable {*/
+
+
+/*    background: transparent !important;*/
+
+
+/*    border-color: transparent !important;*/
+
+
+/*}*/
+
+
+/*overflowtoolbar hover css*/
+
+
+/*.textOverflowToolbar .sapMBtn:hover> .sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed),*/
+
+
+/*.textOverflowToolbar .sapMIBar-CTX .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed) {*/
+
+
+/*    background-color: transparent !important;*/
+
+
+/*    border-color: transparent !important;*/
+
+
+/*}*/
+
+
+/*html.sap-desktop .textOverflowToolbar .sapMToggleBtnPressed,*/
+
+
+/*.sapMToggleBtnPressed:not(.sapMBtnDisabled),*/
+
+
+/*html.sap-desktop .textOverflowToolbar .sapMTBar-CTX .sapMToggleBtnPressed,*/
+
+
+/*.sapMIIBar-CTX .sapMToggleBtnPressed:not(.sapMBtnDisabled),*/
+
+
+/*html.sap-desktop .textOverflowToolbar .sapMTB-Transparent-CTX .sapMtnInner.sapToggleBtnPressed {*/
+
+
+/*    background-color: transparent !important;*/
+
+
+/*    border-color: transparent !important;*/
+
+
+/*}*/
+
+
+/*.textOverflowToolbar:not(.sapMBtnDisabled)>span.sapMBtnInner.sapMBtnIconFirst.sapMBtnTransparent.sapMBtnActive,*/
+
+
+/*.textOverflowToolbar:not(.sapMBtnDisabled)>span.sapMBtnInner.sapMBtnInner.sapMBtnIconLast.sapMBtnTransparent.sapMBtnActive {*/
+
+
+/*    background-color: transparent !important;*/
+
+
+/*    border-color: transparent !important;*/
+
+
+/*}*/
+
+
+/*.subcss >span {*/
+
+
+/*    background-color: #FFE600 !important;*/
+
+
+/*    border: transparent !important;*/
+
+
+/*}*/
+
+
+/*.searchicon>span {*/
+
+
+/*    border: transparent !important;*/
+
+
+/*}*/
+
+
+/*.declinecss>span {*/
+
+
+/*    border: transparent !important;*/
+
+
+/*}*/
+
+
+/*.declinecss.sapMBtn:hover>.sapMBtnHoverable {*/
+
+
+/*    background: transparent !important;*/
+
+
+/*    border-color: transparent !important;*/
+
+
+/*}*/
+
+
+/*for background image css*/
+
+
+/*.page2BgImg {*/
+
+
+/*    background-image: url('../image/backgrund.png');*/
+
+
+/*background-size: cover;*/
+
+
+/*background-repeat: repeat-x;*/
+
+
+/*backgroung-size: 100%;*/
+
+
+/*}*/
+
+
+/*login button css*/
+
+
+/*.buttoncss {*/
+
+
+/*    border: 1.2px solid #FFE800;*/
+
+
+/*    box-sizing: border-box;*/
+
+
+/*}*/
+
+
+/*.buttoncss>span {*/
+
+
+/*    border-color: black;*/
+
+
+/*    color: #FFE800!important;*/
+
+
+/*    background-color: black;*/
+
+
+/*    border: none;*/
+
+
+/*}*/
+
+
+/*.buttoncss.sapMBtn:hover>.sapMBtnHoverable {*/
+
+
+/*    background-color: black !important;*/
+
+
+/*    border-color: black !important;*/
+
+
+/*}*/
+
+
+/*.buttoncss.html.sap-desktop .sapMBtn:focus>.sapMFocusable {*/
+
+
+/*    outline: black !important;*/
+
+
+/*}*/
+
+
+/*.buttoncss.sapMTB-Transparent-CTX .sapMBtn:not(.sapMBtnDisabled):hover>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {*/
+
+
+/*    border-color: black !important;*/
+
+
+/*}*/
+
+
+/*.buttoncss.html.sap-desktop .sapMBtn:focus>.sapMFocusable {*/
+
+
+/*    outline-offset: unset;*/
+
+
+/*}*/
+
+
+/*vbox color changes*/
+
+
+/*.grad2 {*/
+
+
+/*    box-sizing: border-box;*/
+
+
+/*    height: 335px;*/
+
+
+/*    width: 406px;*/
+
+
+/*    border: 0.3px solid #777777;*/
+
+
+/*    opacity: 0.55;*/
+
+
+/*    border-radius: 4px;*/
+
+
+/*    background-color: #000000;*/
+
+
+/*    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);*/
+
+
+/*    margin-left: 42px !important;*/
+
+
+/*    margin-top: 32px !important;*/
+
+
+/*}*/
+
+
+/*.subcss .sapMBtn:hover>.sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive), .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover*/

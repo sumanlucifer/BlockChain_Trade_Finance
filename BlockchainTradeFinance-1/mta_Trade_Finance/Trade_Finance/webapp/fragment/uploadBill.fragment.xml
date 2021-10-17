@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:upload="sap.m.upload">
+	<Dialog afterOpen="onAfterPreviewOpen" afterClose="onAfterPreviewclose">
+		<customHeader>
+			<Toolbar>
+				<Title class="sapUiTinyMarginBegin textfontcolor" text="Upload B/L"/>
+				<ToolbarSpacer/>
+				<Button class="declinecss" icon="sap-icon://decline" press="uploadBLClose"/>
+			</Toolbar>
+		</customHeader>
+		<form:SimpleForm editable="true">
+			<VBox>
+				<Label class="formtextconfirm" text="Please Browse the B/L for {buyerlccreateModel>/tokenNum}"/>
+				<u:FileUploader id="idUpLoadFile" name="bill" tooltip="Upload your file to the local server" uploadComplete="handleUploadComplete"/>
+			</VBox>
+		</form:SimpleForm>
+		<l:HorizontalLayout>
+			<Button class="sapUiSmallMarginBegin subcss" text="Upload" press="UploadBL"/>
+			<Button class="searchicon sapUiSmallMarginBegin" text="Cancel" press="uploadBLClose"/>
+		</l:HorizontalLayout>
+	</Dialog>
+</core:FragmentDefinition>

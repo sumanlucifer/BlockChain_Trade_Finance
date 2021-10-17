@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<BusyDialog title="Loading Data" text="Waiting for the SAP Notification" showCancelButton="true" close="onBusyDialogClose"/>
+	<!--<l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<BusyIndicator text="... something is happening" class="sapUiTinyMarginBottom" />
+	<BusyIndicator size="1.6rem" text="...Waiting for the SAP Notification " class="sapUiMediumMarginBegin"/>
+</l:VerticalLayout>-->
+</core:FragmentDefinition>

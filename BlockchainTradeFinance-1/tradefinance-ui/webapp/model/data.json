@@ -1,0 +1,240 @@
+ {
+ 	"createlcTable": [{
+ 		"l_cNo": "LC535372728282IN",
+ 		"supplierName": "Supplier Name 2",
+ 		"productName": "Computers2",
+ 		"buyerName": "Archer12",
+ 		"sellername": "joe root2",
+ 		"l_cValue": "$201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	}, {
+ 		"l_cNo": "LC535372728283IN",
+ 		"supplierName": "Supplier Name 3",
+ 		"productName": "Computers3",
+ 		"buyerName": "Archer3",
+ 		"sellername": "joe root3",
+ 		"l_cValue": "$201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},{
+ 		"l_cNo": "LC535372728284IN",
+ 		"supplierName": "Supplier Name 4",
+ 		"productName": "Computers4",
+ 		"buyerName": "Archer4",
+ 		"sellername": "joe root4",
+ 		"l_cValue": "$ 2010004",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},{
+ 		"l_cNo": "LC535372728285IN",
+ 		"supplierName": "Supplier Name 5",
+ 		"productName": "Computers5",
+ 		"buyerName": "Archer5",
+ 		"sellername": "joe root5",
+ 		"l_cValue": "$ 201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},{
+ 		"l_cNo": "LC535372728286IN",
+ 		"supplierName": "Supplier Name 6",
+ 		"productName": "Computers6",
+ 		"buyerName": "Archer6",
+ 		"sellername": "joe root6",
+ 		"l_cValue": "$ 201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},
+ 	{
+ 		"l_cNo": "LC535372728287IN",
+ 		"supplierName": "Supplier Name 7",
+ 		"productName": "Computers7",
+ 		"buyerName": "Archer7",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},
+ 	{
+ 		"l_cNo": "LC535372728288IN",
+ 		"supplierName": "Supplier Name 8",
+ 		"productName": "Computers8",
+ 		"buyerName": "Archer8",
+ 		"sellername": "joe root8",
+ 		"l_cValue": "$ 201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	},
+ 	{
+ 		"l_cNo": "LC535372728289IN",
+ 		"supplierName": "Supplier Name 9",
+ 		"productName": "Computers9",
+ 		"buyerName": "Archer9",
+ 		"sellername": "joe root9",
+ 		"l_cValue": "$ 201000",
+ 		"status": "PENDING",
+ 		"Action": "text"
+
+ 	}
+ 	],
+
+ 	"submitTableHistory": [{
+ 		"l_cNo": "LC535372728282IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+
+ 	}, {
+ 		"l_cNo": "LC535372728283IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728284IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728285IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728286IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728287IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728288IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728289IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC5353727282810IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728288IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728289IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC5353727282810IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728288IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC535372728289IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}, {
+ 		"l_cNo": "LC5353727282810IN",
+ 		"supplierName": "Supplier Name 1",
+ 		"productName": "Computers",
+ 		"buyerName": "Archer",
+ 		"sellername": "joe root",
+ 		"l_cValue": "$ 201000",
+ 		"status": "SUBMITTED",
+ 		"Action": "text"
+ 	}],
+
+ 	"tilevalue": {
+ 		"lcno": "049",
+ 		"pendinglc": "Pending L/Cs",
+
+ 		"lcno1": "020",
+ 		"pendinglc1": "Submitted L/Cs",
+
+ 		"lcno2": "069",
+ 		"pendinglc2": "Completed L/Cs",
+
+ 		"lcno3": "$1298.0",
+ 		"pendinglc3": "Account Balence"
+
+ 	}
+ }

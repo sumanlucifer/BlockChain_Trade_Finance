@@ -1,0 +1,227 @@
+.margincss {
+    color: #FFFFFF!important;
+    font-family: EYInterstate;
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.sapMBtnInner {
+    color: #2E2E38 !important;
+}
+
+.sapMBtnIcon {
+    color: #2E2E38 !important;
+}
+
+
+/*login page toolbar css*/
+
+.toolbarcss.sapMTBStandard {
+    border-bottom: none;
+    margin-right: -59px;
+}
+
+
+/*login page toolbar css*/
+
+
+/*for background image css*/
+
+.page2BgImg {
+    background-image: url('../image/backgrund.png');
+}
+
+
+/*login button css*/
+
+.buttoncss {
+    border: 1.2px solid #FFE800;
+    box-sizing: border-box;
+}
+
+.buttoncss>span {
+    border-color: black;
+    color: #FFE800!important;
+    background-color: black;
+    border: none;
+}
+
+.buttoncss.sapMBtn:hover>.sapMBtnHoverable {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.buttoncss.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: black !important;
+}
+
+.buttoncss.sapMTB-Transparent-CTX .sapMBtn:not(.sapMBtnDisabled):hover>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
+    border-color: black !important;
+}
+
+.buttoncss.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline-offset: unset;
+}
+
+
+/*login button css*/
+
+.linkcss.sapMLnk {
+    color: #FFFFFF !important;
+}
+
+.titlecss.sapMTitle {
+    color: #FFFFFF !important;
+}
+
+
+/*vbox color changes*/
+
+.grad2 {
+    box-sizing: border-box;
+    height: 335px;
+    width: 406px;
+    border: 0.3px solid #777777;
+    opacity: 0.55;
+    border-radius: 4px;
+    background-color: #000000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-left: 42px !important;
+    margin-top: 32px !important;
+}
+
+.sapMInputBaseContentWrapper {
+    border: 1px solid #32363a;
+    background: none !important;
+}
+
+
+/*createcss dialougebox css*/
+
+html.sap-tablet .sapMDialog,
+html.sap-desktop .sapMDialog {
+    min-width: 31rem !important;
+}
+
+
+/* wizard title*/
+
+.sapMWizardStep .sapMWizardStepTitle {
+    font-size: 0rem !important;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+.sapMWizardStepTitle {
+    color: white !important;
+}
+
+.sapMWizardProgressNavAnchorTitleContainer {
+    display: grid !important;
+    max-height: 1rem;
+    background: #ffffff;
+    margin-top: -3rem !important;
+    margin-left: -1rem !important;
+}
+
+.sapMWizardProgressNavAnchor {
+    display: contents;
+}
+
+.sapMWizardProgressNav {
+    box-sizing: border-box;
+    height: 6rem;
+    padding: 2.7rem;
+}
+
+.sapMWizard .sapMWizardStepContainer {
+    margin-top: 5rem;
+    background-color: white !important;
+}
+
+.sapMWizardProgressNavAnchorCircle {
+    font-size: 0.875rem;
+    /* width: 1.3rem; */
+    /* height: 1.3rem; */
+    line-height: 2rem;
+    /* border-width: 3px; */
+    border-style: solid;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    border: 2px solid #FAE539;
+    background-color: #1A1A24 !important;
+}
+
+.sapMWizardProgressNavAnchorTitle {
+    font-family: EYInterstate;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.overviewcss {
+    color: #000000;
+    font-family: EYInterstate;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+
+
+/* css of wizard */
+
+.sapMPage>.sapMPageHeader + .sapMPageSubHeader + section {
+    top: 7.1rem;
+}
+
+
+/* input text color for login*/
+
+.einputcss .sapMInputBaseInner {
+    color: white !important;
+}
+
+
+/* create buyer screen css*/
+
+.Cbuyertoolbarcss {
+    border-bottom: none;
+    margin-right: -59px;
+    height: 67px !important;
+    background-color: #1A1A24 !important;
+}
+
+.gridcss {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.gridcss4 {
+    width: 1571px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.labelcss1 {
+    color: #000000;
+    font-family: EYInterstate;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+
+/*login button css*/
+
+.linkcss.sapMLnk {
+    color: #FFFFFF !important;
+}
+
+.titlecss.sapMTitle {
+    color: #FFFFFF !important;
+}
+
+
+/*create frag border bottom css*/
+
+.borderbottomcss {
+    border-bottom: 0.7px solid #C1C1C1;
+}

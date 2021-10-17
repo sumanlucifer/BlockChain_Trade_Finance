@@ -1,0 +1,254 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:u="sap.ui.unified"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.f" controllerName="Trade_Finance.Trade_Finance.controller.bbankreviewedviewDeatils"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:c="sap.suite.ui.commons">
+	<App>
+		<NavContainer id="wizardNavContainer">
+			<pages>
+				<Page id="wizardContentPage" showHeader="true">
+					<customHeader>
+						<Bar class="Cbuyertoolbarcss">
+							<contentLeft>
+								<Image src='./image/EYLogo4whitetransparent.svg ' class="sapUiTinyMarginBottom sapUiMediumMarginBegin"></Image>
+								<Title class="sapUiSmallMarginBegin sapUiSmallMarginTop textalignment" text="Trade Finance Buyer's Bank"/>
+							</contentLeft>
+							<contentRight>
+								<core:Icon src="sap-icon://bell" class="size1 sapUiSmallMarginTop sapUiTinyMarginEnd" color="#ffffff"></core:Icon>
+								<f:Avatar press="openLogoutFragment" src="" displaySize="Custom" customDisplaySize="1.8rem" displayShape="Circle"
+									class="sapUiLargeMarginEnd sapUiSmallMarginTop"/>
+								<!--<MenuButton class="sapUiSmallMarginEnd sapUiSmallMarginTop" -->
+								<!--icon="sap-icon://message-information" useDefaultActionOnly="true"-->
+								<!--	menuPosition="BeginBottom">-->
+								<!--	<menu>-->
+								<!--		<Menu itemSelected="openLogoutFragment">-->
+								<!--			<MenuItem text="Logout" icon="sap-icon://log"></MenuItem>-->
+								<!--		</Menu>-->
+								<!--	</menu>-->
+								<!--</MenuButton>-->
+							</contentRight>
+						</Bar>
+					</customHeader>
+					<subHeader>
+						<Bar>
+							<contentLeft>
+								<HBox class="sapUiTinyMarginTop">
+									<VBox>
+										<Button class="navcss sapUiSmallMarginBegin" press="bbankreviewviewdeatils" type="Back"/>
+									</VBox>
+									<VBox>
+										<Label class="overviewcss sapUiSmallMarginTop sapUiSmallMarginBegin" text="Overview/{buyerbankSubmitView>/token}"/>
+									</VBox>
+								</HBox>
+							</contentLeft>
+						</Bar>
+					</subHeader>
+					<content>
+						<!--<VBox alignItems="Center" justifyContent="Center" width="100%">
+							<VBox alignItems="Center" width="83%" class="hisAlign">-->
+						<c:ProcessFlow id="processflow1" scrollable="true" foldedCorners="false" nodePress="onNodePress" lanes="{processFlow>/items}">
+							<c:lanes>
+								<c:ProcessFlowLaneHeader class="flow circleRem text imagecss" iconSrc="{processFlow>image}" text="{processFlow>user} {processFlow>date}"
+									position="{processFlow>position}"/>
+							</c:lanes>
+						</c:ProcessFlow>
+						<!--	</VBox>
+			        	</VBox>-->
+						<!--<Wizard id="CreateProductWizard" showNextButton="false" complete="wizardCompletedHandler">
+							<WizardStep id="ProductTypeStep" title="L/C Creation" validated="true" class="lcdetailscss" binding="{BuyerbankSubmitModel>/data}">-->
+						<VBox>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Buyer Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/BuyerMetadata/BUY_NAME}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Company Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/BuyerMetadata/BUY_COMPANY}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="IBAN :"/>
+										<Text text="{BuyerbankSubmitModel>/data/BuyerMetadata/BUY_IBAN}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Swift Code :"/>
+										<Text text="{BuyerbankSubmitModel>/data/BuyerMetadata/BUY_SWIFT}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Bank Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/BuyerMetadata/BUY_BANK}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Seller Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/SellerMetadata/SEL_NAME}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Company Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/SellerMetadata/SEL_COMPANY}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="IBAN :"/>
+										<Text text="{BuyerbankSubmitModel>/data/SellerMetadata/SEL_IBAN}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Swift Code :"/>
+										<Text text="{BuyerbankSubmitModel>/data/SellerMetadata/SEL_SWIFT}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Bank Name :"/>
+										<Text text="{BuyerbankSubmitModel>/data/SellerMetadata/SEL_BANK}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="Product Details"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Type :"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/PROD_TYPE}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiTinyMarginBegin">
+										<Label text="Price Per Unit (USD)"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/PROD_PRICE}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Quantity :"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/PROD_QTY}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text="Total value (USD):"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/TOTAL_VAL}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text=""/>
+										<Text text=""/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+							<l:Grid defaultSpan="L12 M12 S12" class="gridcss sapUiTinyMarginBegin sapUiTinyMarginTop">
+								<l:content>
+									<HBox justifyContent="SpaceBetween">
+										<Label class="labelcss1 sapUiLargeMarginBegin" text="L/C Terms and Conditions"></Label>
+									</HBox>
+									<VBox>
+										<Label text="Maturity date :"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/END_DATE}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12" indent="L1"/>
+										</layoutData>
+									</VBox>
+									<!--<VBox class="sapUiTinyMarginBegin">
+										<Label text="Interest rate (%) :"/>
+										<Label text="{BuyerbankSubmitModel>/data/ProductMetadata/INTEREST_RATE}"/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>-->
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text=""/>
+										<Text text=""/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text=""/>
+										<Text text=""/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text=""/>
+										<Text text=""/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox class="sapUiLargeMarginBegin">
+										<Label text=""/>
+										<Text text=""/>
+										<layoutData>
+											<l:GridData span="L2 M2 S12"/>
+										</layoutData>
+									</VBox>
+								</l:content>
+							</l:Grid>
+						</VBox>
+						<HBox class="sapUiLargeMarginBegin">
+							<VBox class="sapUiLargeMarginBegin sapUiTinyMarginTop">
+								<Button class="subcss" text="Back" press="bbankback"/>
+							</VBox>
+						</HBox>
+						<!--</WizardStep>
+							<WizardStep id="ProductInfoStep" validated="false" title="L/C Submission" activate="additionalInfoValidation"></WizardStep>
+							<WizardStep id="OptionalInfoStep" validated="true" activate="optionalStepActivation" title="Buyer Bank Approval"></WizardStep>
+							<WizardStep id="PricingStep" activate="pricingActivate" complete="pricingComplete" validated="true" title="Seller Bank Approval"></WizardStep>
+							<WizardStep id="ProductInfo" validated="false" title="Seller Approval" activate="additionalInfoValidation"></WizardStep>
+							<WizardStep id="OptionalInfo" validated="true" activate="optionalStepActivation" title="Bill of landing"></WizardStep>
+							<WizardStep id="PricingStepS" activate="pricingActivate" complete="pricingComplete" validated="true" title="Goods Dispatched"></WizardStep>
+							<WizardStep id="Optional" validated="true" activate="optionalStepActivation" title="Payment Settlement"></WizardStep>
+							<WizardStep id="Opti" validated="true" activate="optionalStepActivation" title="L/C Closed"></WizardStep>
+						</Wizard>-->
+					</content>
+				</Page>
+			</pages>
+		</NavContainer>
+	</App>
+</mvc:View>

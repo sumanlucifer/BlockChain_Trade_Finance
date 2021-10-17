@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:upload="sap.m.upload">
+	<Dialog afterOpen="onAfterPreviewOpen" draggable="true" resizable="true" afterClose="onAfterPreviewclose" contentHeight="100%"
+		contentWidth="100%">
+		<customHeader>
+			<Toolbar>
+				<Title class="sapUiTinyMarginBegin textfontcolor" text="BL Preview"/>
+				<ToolbarSpacer/>
+				<Button class="declinecss" icon="sap-icon://decline" press="blPreviewClose"/>
+			</Toolbar>
+		</customHeader>
+		<!--<form:SimpleForm editable="true">-->
+		<!--<PDFViewer id="pdfid" source="{pdfDocModel>/source}" title="{/Title}" height="auto">-->
+		<!--	<layoutData>-->
+		<!--		<FlexItemData growFactor="1"/>-->
+		<!--	</layoutData>-->
+		<!--</PDFViewer>-->
+		<!--</form:SimpleForm>-->
+		<ScrollContainer height="100%" width="100%" horizontal="true" vertical="true">
+			<FlexBox direction="Column" renderType="Div" class="sapUiSmallMargin">
+				<!--<FlexBox>
+					<Button text="Correctly Displayed" press="onCorrectPathClick"/>
+					<Button text="Loading Error" press="onIncorrectPathClick"/>
+				</FlexBox>-->
+				<PDFViewer id="pdfid" source="{pdfDocModel>/source}" title="BL Preview" height="500px">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</PDFViewer>
+			</FlexBox>
+		</ScrollContainer>
+		<!--<l:HorizontalLayout>
+			<Button class="searchicon sapUiSmallMarginBegin" text="Cancel" press="blPreviewClose"/>
+		</l:HorizontalLayout>-->
+	</Dialog>
+</core:FragmentDefinition>
